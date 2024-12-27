@@ -1,0 +1,18 @@
+header {
+    background-color: #212529; /* Warna sama seperti navbar */
+    color: white; /* Pastikan teks di header juga berwarna putih */
+}
+
+header .navbar {
+    background-color: inherit; /* Menggunakan warna yang diwarisi dari header */
+    border: none; /* Hilangkan garis batas jika ada */
+}
+
+header .navbar-brand,
+header .nav-link {
+    color: white !important; /* Pastikan teks dan link tetap terlihat */
+}
+
+header .nav-link:hover {
+    color: #adb5bd !important; /* Hover link abu-abu terang */
+}

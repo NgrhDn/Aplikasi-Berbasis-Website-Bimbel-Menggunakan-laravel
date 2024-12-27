@@ -1,0 +1,174 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #343a40; /* Dark background */
+    padding: 1rem;
+}
+
+.navbar {
+    max-width: 1200px; /* Batas lebar maksimal navbar */
+    margin: 0 auto; /* Pusatkan navbar */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Perataan ke kiri */
+}
+
+header nav ul li {
+    margin-right: 20px; /* Spasi antar item */
+}
+
+header nav ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #495057; /* Lighter background on hover */
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+}
+
+/* Login and registration form styles */
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Maximum width for the form */
+    text-align: center;
+    margin: 0 auto; /* Pusatkan secara horizontal */
+    position: relative;
+    top: 50%; /* Pusatkan secara vertikal */
+    transform: translateY(-50%);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333; /* Darker color for labels */
+}
+
+.form-group input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Full width for inputs */
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Materi styles */
+.container {
+    margin-top: 20px; /* Jarak atas */
+}
+
+h1 {
+    font-size: 2rem; /* Ukuran font untuk judul */
+    color: #333; /* Warna teks */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+/* List styles */
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1; /* Hover effect for list items */
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: flex-start /* Align to the left */
+    }
+
+    header nav ul li {
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    .btn {
+        width: 100%; /* Full width for buttons on small screens */
+    }
+
+    .login-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}
